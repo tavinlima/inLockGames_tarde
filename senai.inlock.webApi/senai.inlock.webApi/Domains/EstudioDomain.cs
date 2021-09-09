@@ -5,7 +5,12 @@ using System.Threading.Tasks;
 
 namespace senai.inlock.webApi.Domains
 {
+    /// <summary>
+    /// Classe que representa a entidade ESTUDIO
+    /// </summary>
     public class EstudioDomain
     {
+        public int idEstudio { get; set; }
+        public string nomeEstudio { get; set; }
     }
 }
