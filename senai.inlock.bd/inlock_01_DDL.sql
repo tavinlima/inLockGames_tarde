@@ -14,7 +14,7 @@ GO
 CREATE TABLE JOGOS(
 	idJogo SMALLINT PRIMARY KEY IDENTITY(1,1),
 	idEstudio SMALLINT FOREIGN KEY REFERENCES ESTUDIO(idEstudio),
-	nomeJogo VARCHAR(20),
+	nomeJogo VARCHAR(35),
 	descricao VARCHAR(150),
 	dataLancamento DATE,
 	valor VARCHAR(10)
