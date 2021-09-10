@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using senai.inlock.webApi.Domains;
@@ -19,6 +20,7 @@ namespace senai.inlock.webApi.Controllers
     // ex: http://localhost:5000/api/usuarios
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UsuariosController : ControllerBase
     {
         private IUsuarioRepository _usuarioRepository { get; set; }

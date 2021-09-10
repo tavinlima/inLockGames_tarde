@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai.inlock.webApi.Domains;
 using senai.inlock.webApi.Interfaces;
@@ -16,6 +17,7 @@ namespace senai.inlock.webApi.Controllers
     // ex: http://localhost:5000/api/estudios
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class EstudiosController : ControllerBase
     {
         private IEstudioRepository _estudioRepository { get; set; }

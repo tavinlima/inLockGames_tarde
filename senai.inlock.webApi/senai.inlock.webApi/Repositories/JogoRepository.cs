@@ -21,7 +21,44 @@ namespace senai.inlock.webApi.Repositories
 
         public JogoDomain BuscarPorId(int idJogo)
         {
-            throw new NotImplementedException();
+
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+
+                string querySelectById = @"SELECT idJogo, nomeJogo FROM JOGOS 
+                                           WHERE idJogo = @idJogo";
+
+                con.Open();
+
+                SqlDataReader rdr;
+
+                using (SqlCommand cmd = new SqlCommand(querySelectById, con))
+                {
+
+                    cmd.Parameters.AddWithValue("@idJogo", idJogo);
+
+                    rdr = cmd.ExecuteReader();
+
+                    if (rdr.Read())
+                    {
+
+                        JogoDomain jogoBuscado = new JogoDomain
+                        {
+
+                            idJogo = Convert.ToInt32(rdr[0]),
+                            nomeJogo = rdr[1].ToString()
+
+                        };
+
+                        return jogoBuscado;
+                    }
+
+                    return null;
+
+                }
+
+            }
+
         }
 
         public void Cadastrar(JogoDomain novoJogo)
@@ -29,6 +66,22 @@ namespace senai.inlock.webApi.Repositories
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
 
+                string queryInsert = @"INSERT INTO JOGOS(idEstudio, nomeJogo, descricao, dataLancamento, valor)
+                                       VALUES (@idEstudio, @nomeJogo, @descricao, @dataLancamento, @valor)";
+
+                con.Open();
+
+                using (SqlCommand cmd = new SqlCommand(queryInsert, con))
+                {
+
+                    cmd.Parameters.AddWithValue("@idEstudio", novoJogo.idEstudio);
+                    cmd.Parameters.AddWithValue("@nomeJogo", novoJogo.nomeJogo);
+                    cmd.Parameters.AddWithValue("@descricao", novoJogo.descricao);
+                    cmd.Parameters.AddWithValue("@dataLancamento", novoJogo.dataLancamento);
+                    cmd.Parameters.AddWithValue("valor", novoJogo.valor);
+
+                    cmd.ExecuteNonQuery();
+                }
             }
         }
 
@@ -37,6 +90,15 @@ namespace senai.inlock.webApi.Repositories
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
 
+                string queryDelete = "DELETE FROM JOGOS WHERE idJogo = @id";
+
+                con.Open();
+
+                using (SqlCommand cmd = new SqlCommand(queryDelete, con))
+                {
+                    cmd.Parameters.AddWithValue("@id", idJogo);
+                    cmd.ExecuteNonQuery();
+                }
             }
         }
 
