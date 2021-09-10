@@ -79,7 +79,7 @@ namespace senai.inlock.webApi.Repositories
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelect = @"SELECT idUsuario, email, senha FROM USUARIO
+                string querySelect = @"SELECT idUsuario, email, senha, idTipoUsuario FROM USUARIO
                                        WHERE email = @email AND senha = @senha";
                 using (SqlCommand cmd = new SqlCommand(querySelect, con))
                 {
@@ -96,7 +96,8 @@ namespace senai.inlock.webApi.Repositories
                         {
                             idUsuario = Convert.ToInt32(rdr["idUsuario"]),
                             email = rdr["email"].ToString(),
-                            senha = rdr["senha"].ToString()
+                            senha = rdr["senha"].ToString(),
+                            idTipoUsuario = Convert.ToInt32(rdr["idTipoUsuario"])
                         };
 
                         return usuarioEncontrado;
