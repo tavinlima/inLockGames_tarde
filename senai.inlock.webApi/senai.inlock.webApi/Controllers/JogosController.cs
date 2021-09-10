@@ -34,5 +34,42 @@ namespace senai.inlock.webApi.Controllers
             return Ok(listaJogos);
 
         }
+
+        [HttpPost]
+        public IActionResult Post(JogoDomain novoJogo)
+        {
+
+            _JogoRepository.Cadastrar(novoJogo);
+            return StatusCode(201);
+
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetbyId(int id)
+        {
+
+            JogoDomain jogoBuscado = _JogoRepository.BuscarPorId(id);
+
+            if(jogoBuscado == null)
+            {
+                return NotFound("Nenhum jogo encontrado!");
+            }
+
+            return Ok(jogoBuscado);
+
+        }
+
+
+
+
+
+        [HttpDelete("excluir/{id}")]
+        public IActionResult Delete(int id)
+        {
+            _JogoRepository.Deletar(id);
+
+            return StatusCode(204);
+        }
+
     }
 }
