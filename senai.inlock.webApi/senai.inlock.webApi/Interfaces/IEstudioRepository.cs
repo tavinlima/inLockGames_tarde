@@ -9,7 +9,7 @@ namespace senai.inlock.webApi.Interfaces
     /// <summary>
     /// Interface responsável pelo repositório EstudioRepository
     /// </summary>
-    interface IEstudioRepositorycs
+    interface IEstudioRepository
     {
         /// <summary>
         /// Cadastra um novo estúdio no sistema

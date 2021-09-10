@@ -17,7 +17,6 @@ namespace senai.inlock.webApi.Domains
         [Required(ErrorMessage = "Informe a senha")]
         [StringLength(10, MinimumLength = 6, ErrorMessage = "O campo senha precisa ter no mínimo 6 e no máximo 10 caracteres")]
         public string senha { get; set; }
-        public string permissao { get; set; }
         public int idTipoUsuario { get; set; }
     }
 }
