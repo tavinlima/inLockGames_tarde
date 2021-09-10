@@ -1013,19 +1013,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\enzzo\\.nuget\\packages\\": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\enzzo\\OneDrive\\Área de Trabalho\\inLockGames_tarde\\senai.inlock.webApi\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\Desktop\\ProjetoInLock\\senai.inlock.webApi\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
       "projectName": "senai.inlock.webApi",
-      "projectPath": "C:\\Users\\enzzo\\OneDrive\\Área de Trabalho\\inLockGames_tarde\\senai.inlock.webApi\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
-      "packagesPath": "C:\\Users\\enzzo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\enzzo\\OneDrive\\Área de Trabalho\\inLockGames_tarde\\senai.inlock.webApi\\senai.inlock.webApi\\obj\\",
+      "projectPath": "C:\\Users\\Dell\\Desktop\\ProjetoInLock\\senai.inlock.webApi\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dell\\Desktop\\ProjetoInLock\\senai.inlock.webApi\\senai.inlock.webApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\enzzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1089,5 +1089,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\Dell\\Desktop\\ProjetoInLock\\senai.inlock.webApi\\senai.inlock.webApi\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
