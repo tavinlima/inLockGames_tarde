@@ -35,3 +35,12 @@ C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\obj\
 C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\ref\senai.inlock.webApi.dll
 C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.pdb
 C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.genruntimeconfig.cache
+C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.csproj.AssemblyReference.cache
+C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.AssemblyInfoInputs.cache
+C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.AssemblyInfo.cs
+C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.csproj.CoreCompileInputs.cache
+C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.dll
+C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\ref\senai.inlock.webApi.dll
+C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.pdb
