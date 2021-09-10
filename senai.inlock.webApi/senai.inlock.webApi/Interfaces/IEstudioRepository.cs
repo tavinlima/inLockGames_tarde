@@ -39,7 +39,7 @@ namespace senai.inlock.webApi.Interfaces
         /// <summary>
         /// Deleta um estúdio cadastrado
         /// </summary>
-        /// <param name="idUsuario">Id do estúdio que será deletado</param>
-        void Deletar(int iEstudio);
+        /// <param name="idEstudio">Id do estúdio que será deletado</param>
+        void Deletar(int idEstudio);
     }
 }

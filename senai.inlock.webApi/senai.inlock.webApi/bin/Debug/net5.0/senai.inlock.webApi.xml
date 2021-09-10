@@ -58,7 +58,7 @@
             <summary>
             Deleta um estúdio cadastrado
             </summary>
-            <param name="idUsuario">Id do estúdio que será deletado</param>
+            <param name="idEstudio">Id do estúdio que será deletado</param>
         </member>
         <member name="T:senai.inlock.webApi.Interfaces.IJogoRepository">
             <summary>

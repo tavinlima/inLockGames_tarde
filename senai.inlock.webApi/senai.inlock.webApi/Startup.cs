@@ -96,14 +96,13 @@ namespace senai.inlock.webApi
                 c.RoutePrefix = string.Empty;
             });
 
+            app.UseRouting();
 
             // Habilita a autenticação
             app.UseAuthentication();        // 401
 
             // Habilita a autorização
             app.UseAuthorization();         // 403
-
-            app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
