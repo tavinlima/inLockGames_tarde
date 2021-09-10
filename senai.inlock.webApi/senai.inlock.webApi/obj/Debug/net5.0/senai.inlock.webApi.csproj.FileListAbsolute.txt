@@ -35,6 +35,7 @@ C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\obj\
 C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\ref\senai.inlock.webApi.dll
 C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.pdb
 C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.csproj.AssemblyReference.cache
 C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.AssemblyInfoInputs.cache
@@ -44,3 +45,12 @@ C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\
 C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.dll
 C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\ref\senai.inlock.webApi.dll
 C:\Users\enzzo\OneDrive\Área de Trabalho\inLockGames_tarde\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.pdb
+=======
+C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net5.0\senai.inlock.webApi.xml
+C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Dell\Desktop\ProjetoInLock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.xml
+>>>>>>> 089c23fe163a6625a099cdaad4e108270b37dacb

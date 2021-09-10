@@ -21,10 +21,7 @@ namespace senai.inlock.webApi.Repositories
 
         public JogoDomain BuscarPorId(int idJogo)
         {
-            using (SqlConnection con = new SqlConnection(stringConexao))
-            {
-
-            }
+            throw new NotImplementedException();
         }
 
         public void Cadastrar(JogoDomain novoJogo)
@@ -45,6 +42,7 @@ namespace senai.inlock.webApi.Repositories
 
         public List<JogoDomain> ListarTodos()
         {
+<<<<<<< HEAD
             List<JogoDomain> listaJogos = new List<JogoDomain>();
 
             using (SqlConnection con = new SqlConnection(stringConexao))
@@ -88,6 +86,9 @@ namespace senai.inlock.webApi.Repositories
             }
 
             return listaJogos;
+=======
+            throw new NotImplementedException();
+>>>>>>> 089c23fe163a6625a099cdaad4e108270b37dacb
         }
     }
 }
