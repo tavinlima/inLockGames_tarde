@@ -20,7 +20,6 @@ namespace senai.inlock.webApi.Controllers
     // ex: http://localhost:5000/api/usuarios
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class UsuariosController : ControllerBase
     {
         private IUsuarioRepository _usuarioRepository { get; set; }

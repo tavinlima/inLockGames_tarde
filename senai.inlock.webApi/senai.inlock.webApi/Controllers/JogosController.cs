@@ -66,10 +66,62 @@ namespace senai.inlock.webApi.Controllers
         [HttpDelete("excluir/{id}")]
         public IActionResult Delete(int id)
         {
-            _JogoRepository.Deletar(id);
+            JogoDomain jogoEncontrado = _JogoRepository.BuscarPorId(id);
 
-            return StatusCode(204);
+            if (jogoEncontrado != null)
+            {
+                try
+                {
+                    _JogoRepository.Deletar(id);
+                }
+                catch (Exception erro)
+                {
+                    return BadRequest(erro);
+                }
+
+                return StatusCode(204);
+            }
+            return NotFound("Nenhum jogo foi encontrado");
+            
         }
 
+        [Authorize(Roles = "1")]
+        [HttpPut]
+        public IActionResult Put(JogoDomain jogoAtualizado)
+        {
+            if (jogoAtualizado.idEstudio <= 0 || jogoAtualizado.nomeJogo == null || jogoAtualizado.descricao == null || jogoAtualizado.idJogo <= 0)
+            {
+                return BadRequest(
+                    new
+                    {
+                        mensagem = "Dados não informados",
+                    }
+                    );
+            }
+
+            JogoDomain jogoEncontrado = _JogoRepository.BuscarPorId(jogoAtualizado.idJogo);
+
+            if (jogoEncontrado != null)
+            {
+                try
+                {
+                    _JogoRepository.AtualizarJogo(jogoAtualizado);
+
+                    return NoContent();
+                }
+                catch (Exception erro)
+                {
+                    return BadRequest(erro);
+                }
+            }
+
+            return NotFound(
+                new
+                {
+                    mensagem = "Jogo não encontrado",
+                    errorStatus = true
+                }
+                );
+        }
     }
 }

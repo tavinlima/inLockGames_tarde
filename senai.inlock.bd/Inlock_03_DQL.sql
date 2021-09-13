@@ -30,3 +30,6 @@ GO
  SELECT idEstudio, nomeEstudio FROM ESTUDIO
  WHERE idEstudio = 3;
  GO
+
+ SELECT ISNULL(idJogo, 0), ISNULL(JOGOS.idEstudio, 0), ISNULL(nomeEstudio, 'Não cadastrado'), ISNULL(nomeJogo, 'Não cadastrado'), ISNULL(descricao, 'Sem descrição'), ISNULL(dataLancamento, ''), ISNULL(valor, 0)  FROM JOGOS 
+ FULL OUTER JOIN ESTUDIO ON JOGOS.idEstudio = ESTUDIO.idEstudio
